@@ -11,7 +11,7 @@ let person = new Person('171-28-0926', 'htech','agen');
 console.log(person.getFullNames());*/
 //////////////////////////////////////
 
-class Person{
+class Persons{
     private ssn:any;
     private firstName: string;
     private lastName: string;
@@ -26,5 +26,7 @@ class Person{
     }
 }
 
-let person = new Person('98-218-12712','htech','agen');
+let person = new Persons('98-218-12712','htech','agen');
+let person2 : Persons = new Persons('98-218-12712','zack','zoerak');
 console.log(person.getFullNames());
+console.log(person2.getFullNames());

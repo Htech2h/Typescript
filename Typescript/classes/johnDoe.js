@@ -10,16 +10,18 @@ Person.prototype.getFullNames = function(){
 let person = new Person('171-28-0926', 'htech','agen');
 console.log(person.getFullNames());*/
 //////////////////////////////////////
-var Person = /** @class */ (function () {
-    function Person(ssn, firstName, lastName) {
+var Persons = /** @class */ (function () {
+    function Persons(ssn, firstName, lastName) {
         this.ssn = ssn;
         this.firstName = firstName;
         this.lastName = lastName;
     }
-    Person.prototype.getFullNames = function () {
+    Persons.prototype.getFullNames = function () {
         return "".concat(this.ssn, " ").concat(this.firstName, " ").concat(this.lastName);
     };
-    return Person;
+    return Persons;
 }());
-var person = new Person('98-218-12712', 'htech', 'agen');
+var person = new Persons('98-218-12712', 'htech', 'agen');
+var person2 = new Persons('98-218-12712', 'zack', 'zoerak');
 console.log(person.getFullNames());
+console.log(person2.getFullNames());
